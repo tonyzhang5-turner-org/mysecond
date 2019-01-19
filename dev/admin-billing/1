@@ -1,0 +1,48 @@
+# Customer/project variables
+variable "description" {
+  default = "https://github.com/turnercode/nba-dalton-terraform"
+}
+
+variable "billing-customer" {
+  default = "nba.com"
+}
+
+variable "customer" {
+  default = "ids"
+}
+
+variable "contact-email" {
+  default = "identitysrvcsdev@turner.com"
+}
+
+variable "team" {
+  default = "ictops"
+}
+
+variable "owner" {
+  default = "ictops"
+}
+
+variable "asg_specific_security_groups" {
+ # default = "sg-0eec1445b541d8b31"
+ #  default = "sg-5765aa17"
+   default = "sg-a03f44da"
+}
+
+variable "lb_specific_security_groups" {
+ # default = "sg-044ef045bf0e05bcc"
+   default = "sg-5765aa17"
+   default = "sg-a03f44da"
+}
+
+variable "aws_ami" {
+  default = "ami-fce3c696"
+}
+
+variable "aws_named_profile" {
+  type = "string" # prompted if 'varInitScript.sh' is not run
+}
+
+variable "aws_account" {
+  type = "string" # prompted if 'varInitScript.sh' is not run
+}
